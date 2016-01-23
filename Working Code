@@ -1,8 +1,3 @@
-def start():
-    start = input("A text based game created by Olly and Finn. If you would like to start type Start game into the console whenever you're ready. Happy gaming!")
-    if start == "Start game":
-        print entryhall()
-        
 def entryhall():
     import time
     import sys
@@ -28,3 +23,8 @@ def entryhall():
             print("Hmmm interesting")
     elif begin == "n":
         sys.exit("boob")
+def start():
+    start = raw_input("A text based game created by Olly and Finn. If you would like to start type Start game into the console whenever you're ready. Happy gaming!")
+    if start == "Start game":
+        entryhall()
+        
