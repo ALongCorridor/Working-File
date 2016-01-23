@@ -1,6 +1,9 @@
-def entryhall():
+import time
+
+def entryhall():    
     import time
     import sys
+    print("Welcome to the entry hall")
     name = raw_input("What is your name weary traveller?")
     
     print "Good day", name 
@@ -23,8 +26,24 @@ def entryhall():
             print("Hmmm interesting")
     elif begin == "n":
         sys.exit("boob")
+
 def start():
-    start = raw_input("A text based game created by Olly and Finn. If you would like to start type Start game into the console whenever you're ready. Happy gaming!")
-    if start == "Start game":
+    sure = raw_input("Be prepared, there is no turning back now for once you walk into the entryhall the door closes behind you. There is 1 way out and to find this you must work your way down twisted corridors and sharp corners to find one of two things. The exit, or your death! Good luck to you on your treacherous journey... Are you sure you would like to cointinue? (y/n)")
+    if sure == "y":
+        time.sleep(3)
         entryhall()
+        
+    if sure == "n":
+        print("No surprise there then, you would of died anyway you puny weakling. Goodbye! Leave while you have the chance!")
+        
+
+  
+begin = raw_input("Hello! Welcome to our game. If you would like to play type Start game, if not type Exit. Happy gaming.")
+
+
+
+if begin == "Start game":
+    start()
+
+
         
