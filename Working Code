@@ -1,0 +1,30 @@
+def start():
+    start = input("A text based game created by Olly and Finn. If you would like to start type Start game into the console whenever you're ready. Happy gaming!")
+    if start == "Start game":
+        print entryhall()
+        
+def entryhall():
+    import time
+    import sys
+    name = raw_input("What is your name weary traveller?")
+    
+    print "Good day", name 
+    begin = raw_input ("Are you ready to start your adventure? (y/n)")
+    
+    if begin == "y":
+        print ("Good, then let your journey begin.")
+    
+        time.sleep(1)
+        
+        print("Which door do you choose, be wary though traveller... ")
+        time.sleep(1)
+        doorchoice = raw_input("for once you choose a door there is no going back. (left/right)")
+            
+        if doorchoice == ("left"):
+            print("Ah! Good choice")
+            time.sleep(1)
+        
+        elif doorchoice == ("right"):
+            print("Hmmm interesting")
+    elif begin == "n":
+        sys.exit("boob")
