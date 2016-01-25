@@ -43,6 +43,10 @@ begin = raw_input("Hello! Welcome to our game. If you would like to play type St
 
 if begin == "Start game":
     start()
+elif begin == "start game":
+    start()
+else:
+    Print("Fine then dont appreciate artwork!")
 
 
 
