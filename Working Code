@@ -46,8 +46,4 @@ if begin == "Start game":
 elif begin == "start game":
     start()
 else:
-    Print("Fine then dont appreciate artwork!")
-
-
-
-        
+    print("Fine then, don't appreciate artwork!")
