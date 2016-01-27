@@ -51,7 +51,7 @@ def kitchen():
 def start():
     sure = raw_input("Be prepared, there is no turning back now for once you walk into the entryhall the door closes behind you. There is 1 way out and to find this you must work your way down twisted corridors and sharp corners to find one of two things. The exit, or your death! Good luck to you on your treacherous journey... Are you sure you would like to cointinue? (y/n)")
     if sure == "y":
-        time.sleep(3)
+        time.sleep(1.5)
         entryhall()
         
     if sure == "n":
