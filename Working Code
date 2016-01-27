@@ -19,13 +19,34 @@ def entryhall():
         doorchoice = raw_input("for once you choose a door there is no going back. (left/right)")
             
         if doorchoice == ("left"):
-            print("Ah! Good choice")
             time.sleep(1)
+            kitchen()
         
         elif doorchoice == ("right"):
             print("Hmmm interesting")
     elif begin == "n":
         sys.exit("boob")
+
+def kitchen():
+    import time
+    
+    print("Welcome to the Kitchen")
+    print("You chose wisely")
+    time.sleep(1)
+    print("There is two doors, one infront of you and one to your right.")
+    time.sleep(1)
+    print("In the centre of the room is a table, upon it lies a small piece of paper.")
+    time.sleep(1)
+    print("A candle flickers in the darkness just lighting the room.")
+    read = raw_input("There are some some kitchen utensils in the room, would you like to approach the table and read the note? (y/n)")
+    if read == "y":
+        print("There is blood on the note")
+        time.sleep(1)
+        print("Is the writing in blood?")
+        time.sleep(1)
+        print("The note says: ")
+        time.sleep(1)
+        riddle = raw_input("Some of my blood has been shed, by a knife I am dead, my right to life has gone, but which way did I go? It was the right way you must know! Go the right way!")
 
 def start():
     sure = raw_input("Be prepared, there is no turning back now for once you walk into the entryhall the door closes behind you. There is 1 way out and to find this you must work your way down twisted corridors and sharp corners to find one of two things. The exit, or your death! Good luck to you on your treacherous journey... Are you sure you would like to cointinue? (y/n)")
