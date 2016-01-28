@@ -44,10 +44,13 @@ def gameover():
     time.sleep(1)
     gameover = raw_input("Thank you for playing our game we hope you enjoyed! If you would like to return to the title screen type Play Again. If you would rather give up, type Exit")
     if gameover == "Play Again":
+        print("Ah good choice!)
         startgame()
     elif gameover == "Play again":
+        print("Ah good choice!)
         startgame()
     elif gameover == "play again":
+        print("Ah good choice!)
         startgame()
     else:
         print("You puny weakling")
@@ -104,7 +107,7 @@ def kitchen():
         pantry()
 
 def start():
-    sure = raw_input("Be prepared, there is no turning back now for once you walk into the entryhall the door closes behind you. There is 1 way out and to find this you must work your way down twisted corridors and sharp corners to find one of two things. The exit, or your death! Good luck to you on your treacherous journey... Are you sure you would like to cointinue? (y/n)")
+    sure = raw_input("Be prepared, there is no turning back now for once you walk into the entry hall the door closes behind you. There is one way out and to find this you must work your way down twisted corridors and sharp corners to find one of two things. The exit, or your death! Good luck to you on your treacherous journey... Are you sure you would like to continue? (y/n)")
     if sure == "y":
         time.sleep(1.25)
         entryhall()
@@ -112,7 +115,6 @@ def start():
     if sure == "n":
         print("No surprise there then, you would of died anyway you puny weakling. Goodbye! Leave while you have the chance!")
    
-
 def startgame():
     begin = raw_input("Hello! Welcome to our game. If you would like to play type Start game, if not type Exit. Happy gaming.")
     if begin == "Start game":
