@@ -113,6 +113,15 @@ def start():
         print("No surprise there then, you would of died anyway you puny weakling. Goodbye! Leave while you have the chance!")
    
 
+def startgame():
+    begin = raw_input("Hello! Welcome to our game. If you would like to play type Start game, if not type Exit. Happy gaming.")
+    if begin == "Start game":
+        start()
+    elif begin == "start game":
+        start()
+    else:
+        print("Fine then, don't appreciate artwork!")
+
 
 begin = raw_input("Hello! Welcome to our game. If you would like to play type Start game, if not type Exit. Happy gaming.")
 
