@@ -1,5 +1,59 @@
 import time
 
+def sittingroom():
+    import time
+    print("Welcome to the sitting room")
+    time.sleep(1)
+    print("There is two loungers in the room and a bear skin rug upon the floor")
+    time.sleep(1)
+    print("A small coffee table stands between the loungers")
+    time.sleep(2)
+    print("Upon the table there is a half full glass of red liquid. It looks vaguely like blood!")
+    time.sleep(2)
+    print("You ignore the weird glass and see a sealed envelope next to it with a name on it")
+    time.sleep(2)
+    print("The name is not yours, it reads 'Brahms'")
+    time.sleep(2)
+    print("Maybe you should leave it and leave the room")
+    time.sleep(2)
+    envelope = raw_input("Would you like to approach the table and open the envelope? (y/n)")
+    if envelope == "y":
+        print("The envelope seems to be already open")
+        time.sleep(1)
+        print("You lift the flap of the envelope")
+        time.sleep(2)
+        print("There is a small letter inside")
+        time.sleep(2)
+        print("It reads: 'Brahms, I am coming to visit you. My carriage is due to arrive within 3 days. I need your help brother, my illness is bad. I have a strong desire to hurt someone and my headaches are increasingly bad. I hope this doesn't inconvenience you. From your brother, Mervyn.'")
+        time.sleep(5)
+        print("You think to yourself: 'What a weird note... Maybe Brahms was the owner of this house? There sure seems to be paintings signed by him'")
+        time.sleep(3)
+        print("You put the note into your pocket and step back from the table")
+        time.sleep(2)
+        print("Looking around you, you notice two doors")
+        time.sleep(2)
+        print("One is on your left and one is ahead of you")
+        time.sleep(2)
+        choice = raw_input("The door ahead of you seems slightly open, would you like to go and investigate? (y/n)")
+        if choice == "y":
+            print("You walk towards the door and push it open, it creaks loudly")
+            time.sleep(2)
+            office()
+    else:
+        print("Good idea")
+        time.sleep(2)
+        print("Ahead of you is a door, you walk over to it and turn the handle")
+        time.sleep(2)
+        print("It is stiff and doesn't open")
+        time.sleep(2)
+        print("You try again...")
+        time.sleep(2)
+        print("The handle turns, with a loud creak the door opens")
+        time.sleep(2)
+        print("You step into the room")
+        time.sleep(2)
+        office()
+
 def pantry():
     import time
     print("Welcome to the pantry")
@@ -131,5 +185,7 @@ if begin == "Start game":
     start()
 elif begin == "start game":
     start()
+elif begin == "Start Game":
+    start()    
 else:
     print("Fine then, don't appreciate artwork!")
