@@ -132,7 +132,7 @@ def entryhall():
             kitchen()
         
         elif doorchoice == ("right"):
-            print("Hmmm interesting")
+            sittingroom()
     elif begin == "n":
         sys.exit("boob")
 
