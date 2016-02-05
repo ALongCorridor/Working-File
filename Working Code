@@ -1,8 +1,12 @@
 import time
 
+list = []
+
+
+
 def sittingroom():
     import time
-    print("Welcome to the sitting room")
+    print "Welcome to the sitting room", list[0]
     time.sleep(1)
     print("There is two loungers in the room and a bear skin rug upon the floor")
     time.sleep(1)
@@ -56,7 +60,7 @@ def sittingroom():
 
 def pantry():
     import time
-    print("Welcome to the pantry")
+    print "Welcome to the pantry",list[0]
     time.sleep(1.25)
     print("The door closes behind you, darkness stares you in the face")
     time.sleep(1.25)
@@ -72,7 +76,7 @@ def pantry():
 def kitchen():
     import time
     
-    print("Welcome to the Kitchen")
+    print "Welcome to the Kitchen", list[0]
     print("You chose wisely")
     time.sleep(1.25)
     print("There is two doors, one infront of you and one to your right.")
@@ -112,10 +116,7 @@ def gameover():
 def entryhall():    
     import time
     import sys
-    print("Welcome to the entry hall")
-    name = raw_input("What is your name weary traveller?")
-    
-    print "Good day", name 
+    print "Good day", list[0] 
     begin = raw_input ("Are you ready to start your adventure? (y/n)")
     
     if begin == "y":
@@ -160,15 +161,6 @@ def kitchen():
     if riddle == "forward":
         pantry()
 
-def start():
-    sure = raw_input("Be prepared, there is no turning back now for once you walk into the entry hall the door closes behind you. There is one way out and to find this you must work your way down twisted corridors and sharp corners to find one of two things. The exit, or your death! Good luck to you on your treacherous journey... Are you sure you would like to continue? (y/n)")
-    if sure == "y":
-        time.sleep(1.25)
-        entryhall()
-        
-    if sure == "n":
-        print("No surprise there then, you would of died anyway you puny weakling. Goodbye! Leave while you have the chance!")
-   
 def startgame():
     begin = raw_input("Hello! Welcome to our game. If you would like to play type Start game, if not type Exit. Happy gaming.")
     if begin == "Start game":
@@ -178,14 +170,16 @@ def startgame():
     else:
         print("Fine then, don't appreciate artwork!")
 
+start = raw_input("Welcome to our game, if you would like to start the game type 'start game' if not type 'exit'")
 
-begin = raw_input("Hello! Welcome to our game. If you would like to play type Start game, if not type Exit. Happy gaming.")
+if start == "start game":
+    time.sleep(1)
+    print("Good choice, a long twisted journey through an old house approahces you. There is no turning back now, we wish you luck and good faith upon your journey!")
+    
+print("Welcome to the entry hall")
 
-if begin == "Start game":
-    start()
-elif begin == "start game":
-    start()
-elif begin == "Start Game":
-    start()    
-else:
-    print("Fine then, don't appreciate artwork!")
+name = raw_input("What is your name weary traveller?")
+    
+list.append(name)
+
+entryhall()
