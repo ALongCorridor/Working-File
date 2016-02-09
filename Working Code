@@ -92,24 +92,19 @@ def kitchen():
         time.sleep(1.25)
         print("The note says: ")
         time.sleep(1.25)
-        riddle = raw_input("Some of my blood has been shed, by a knife I am dead, my right to life has gone, but which way did I go? It was the right way you must know! (forward/right)")
+        riddle = raw_input("Some of my blood has been shed, by a knife I am dead, my right to life has gone, but which way did I go? It was the right way you must know! (f/r)")
         
-    if riddle == "forward":
+    if riddle == "f":
         pantry()
 
 def gameover():
     import time
     time.sleep(1)
-    gameover = raw_input("Thank you for playing our game we hope you enjoyed! If you would like to return to the title screen type Play Again. If you would rather give up, type Exit")
-    if gameover == "Play Again":
-        print("Ah good choice!")
-        startgame()
-    elif gameover == "Play again":
-        print("Ah good choice!")
-        startgame()
-    elif gameover == "play again":
-        print("Ah good choice!")
-        startgame()
+    gameover = raw_input("Thank you for playing our game we hope you enjoyed! If you would like to play again type 'play again' if you would like to quit type 'exit'")
+    if gameover == "play again":
+        time.sleep(2)
+        entryhall1()
+        
     else:
         print("You puny weakling")
 
@@ -126,16 +121,41 @@ def entryhall():
         
         print("Which door do you choose, be wary though traveller... ")
         time.sleep(1.25)
-        doorchoice = raw_input("for once you choose a door there is no going back. (left/right)")
+        doorchoice = raw_input("for once you choose a door there is no going back. (l/r)")
             
-        if doorchoice == ("left"):
+        if doorchoice == ("l"):
             time.sleep(1.25)
             kitchen()
         
-        elif doorchoice == ("right"):
+        elif doorchoice == ("r"):
             sittingroom()
     elif begin == "n":
         sys.exit("boob")
+        
+def entryhall1():
+    import time
+    import sys
+    print "Hello again", list[0] 
+    begin = raw_input ("Are you ready to try again? (y/n)")
+    
+    if begin == "y":
+        print ("Good, then let your journey begin.")
+    
+        time.sleep(1.25)
+        
+        print("Do you remember your choice? It seems as if it was the wrong choice so maybe you should try the other door.")
+        time.sleep(1.25)
+        doorchoice = raw_input("So which door will you choose this time? (l/r)")
+            
+        if doorchoice == ("l"):
+            time.sleep(1.25)
+            kitchen()
+        
+        elif doorchoice == ("r"):
+            sittingroom()
+    elif begin == "n":
+        sys.exit("boob")
+    
 
 def kitchen():
     import time
@@ -160,15 +180,8 @@ def kitchen():
         
     if riddle == "forward":
         pantry()
+        
 
-def startgame():
-    begin = raw_input("Hello! Welcome to our game. If you would like to play type Start game, if not type Exit. Happy gaming.")
-    if begin == "Start game":
-        start()
-    elif begin == "start game":
-        start()
-    else:
-        print("Fine then, don't appreciate artwork!")
 
 start = raw_input("Welcome to our game, if you would like to start the game type 'start game' if not type 'exit'")
 
