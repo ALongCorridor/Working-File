@@ -2,7 +2,7 @@ import time
 
 list = []
 
-
+backpack = []
 
 def sittingroom():
     import time
@@ -42,7 +42,7 @@ def sittingroom():
         if choice == "y":
             print("You walk towards the door and push it open, it creaks loudly")
             time.sleep(2)
-            office()
+            office1()
     else:
         print("Good idea")
         time.sleep(2)
@@ -56,7 +56,7 @@ def sittingroom():
         time.sleep(2)
         print("You step into the room")
         time.sleep(2)
-        office()
+        office2()
 
 def pantry():
     import time
@@ -156,11 +156,10 @@ def entryhall1():
     elif begin == "n":
         sys.exit("boob")
     
-
 def kitchen():
     import time
     
-    print("Welcome to the Kitchen")
+    print "Welcome to the Kitchen", list[0]
     print("You chose wisely")
     time.sleep(1.25)
     print("There is two doors, one infront of you and one to your right.")
